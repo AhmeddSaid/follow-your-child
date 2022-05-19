@@ -274,14 +274,19 @@ transform: translateY(15px);
   border-radius: 6px;
   position: relative;
 }
-.testimonials .box h3 {
+.rate .box h3 {
   color: var(--main-color);
   margin: 0 0 10px;
 }
-.testimonials .box .title {
-  color: var(--main-color-alt);
-  margin-bottom: 10px;
+.rate .box .title {
+  margin-bottom: 5px;
   display: block;
+}
+.rate .box .rating {
+  margin-bottom: 8px;
+}
+.rate .box .rating .filled {
+  color: var(--main-color);
 }
 .testimonials .box p {
   line-height: 1.5;
@@ -325,6 +330,17 @@ transform: translateY(15px);
 }
 .services .box:hover::before {
   width: 100%;
+}
+.services .box > i {
+  margin: 30px auto 20px;
+  display: block;
+  text-align: center;
+  color: #d5d5d5;
+  width: fit-content;
+  transition: var(--main-transition);
+}
+.services .box i:hover{
+  color: var(--main-color);
 }
 .services .box > h3 {
   text-align: center;
